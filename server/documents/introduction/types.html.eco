@@ -3,7 +3,7 @@ layout      : 'default'
 css         : 'guide'
 
 title       : 'Types'
-description : 'A type is an mutually exclusive version of an element'
+description : 'Een type is een wederzijds exclusieve versie van een element'
 type        : 'UI Introduction'
 ---
 <script src="/javascript/intro.js"></script>
@@ -12,15 +12,15 @@ type        : 'UI Introduction'
 <div class="main container">
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
-      <a class="active item">Overview</a>
+      <a class="active item">Overzicht</a>
     </div>
   </div>
 
-  <h2 class="ui dividing header">Overview</h2>
+  <h2 class="ui dividing header">Overzicht</h2>
 
-  <p>A ui definition in Semantic usually contains a list of mutually exclusive variations on an element design. A type is designated by an additional class name on a UI element</p>
+  <p>Een ui definitie in Semantic bevat gewoonlijk een lijst van wederzijds exclusieve variaties op een element z'n ontwerp. Een type wordt aangewezen door een additionele class name toe te voegen aan een UI element</p>
 
-  <div class="code" data-type="html" data-preview="true" data-title="Types of UI Button">
+  <div class="code" data-type="html" data-preview="true" data-title="UI Button Types">
     <div class="ui labeled icon button">
       Download <i class="download icon"></i>
     </div>
@@ -36,10 +36,10 @@ type        : 'UI Introduction'
     </div>
   </div>
 
-  <h3 class="ui header">Content</h3>
-  <p>Types may require different html structures to work correctly. For example, an icon menu might expect different content like icons glyphs instead of text to be formatted correctly</p>
+  <h3 class="ui header">Inhoud</h3>
+  <p>Types vereisen mogelijk verschillende HTML structuren om correct te werken. Een icoon menu kan bijvoorbeeld andere inhoud verwachten zoals een icon glyph in plaats van tekst om correct weergegeven te worden</p>
 
-  <div class="code" data-type="html" data-title="Icon Menu Type" data-preview="true">
+  <div class="code" data-type="html" data-title="Icoon Menu Type" data-preview="true">
     <div class="ui icon menu">
       <a class="item">
         <i class="mail icon"></i>
@@ -53,10 +53,10 @@ type        : 'UI Introduction'
     </div>
   </div>
 
-  <h3 class="ui header">HTML Differences</h3>
-  <p>Types may also each require slightly different html. For example, a tiered menu needs html specified for a sub menu to display itself correctly</p>
+  <h3 class="ui header">HTML Verschillen</h3>
+  <p>Types vereisen elk mogelijk ook licht verschillende HTML. Een gestapeld menu heeft bijvoorbeeld HTML voor een submenu nodig om zichzelf correct weer te geven.</p>
 
-  <div class="code" data-type="html" data-title="Tiered Menu Type" data-preview="true">
+  <div class="code" data-type="html" data-title="Gestapeld Menu Type" data-preview="true">
     <div class="ui tiered menu">
       <div class="menu">
         <div class="active item">
@@ -70,14 +70,14 @@ type        : 'UI Introduction'
         </a>
       </div>
       <div class="sub menu">
-        <div class="active item">Activity</div>
-        <a class="item">Profile</a>
+        <div class="active item">Activiteit</div>
+        <a class="item">Profiel</a>
       </div>
     </div>
   </div>
   <div class="ui divider"></div>
   <a class="ui large right labeled teal icon button" href="/introduction/variations.html">
-    Next: UI Variations
+    Eerstvolgend: UI Variaties
     <i class="right arrow icon"></i>
   </a>
 

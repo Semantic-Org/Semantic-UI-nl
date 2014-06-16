@@ -46,43 +46,43 @@ type        : 'Semantic'
       <div class="item">
         <i class="check icon"></i>
         <div class="content">
-          <div class="header">Instance available in metadata</div>
-          <p>Modules store their instance in metadata meaning that, in a pinch, you can directly modify the instance of a UI element by modifying its properties.</p>
+          <div class="header">Instantie beschikbaar in metadata</div>
+          <p>Modules slaan hun instantie op in metadata wat inhoud dat, als je een probleem hebt, je de instantie van een UI element direct kan aanpassen door zijn eigenschappen aan te passen.</p>
         </div>
       </div>
     </div>
     <div class="ui divider"></div>
     <a href="/spec/docs/modal.commented.html" class="ui large secondary labeled icon button">
       <i class="info icon"></i>
-      Real World Commented Example
+      Real World Voorbeeld Met Commentaar
     </a>
     <a href="/spec/docs/module.commented.html" class="ui large black labeled icon button">
       <i class="info icon"></i>
-      Commented Design Pattern
+      Design Pattern Met Commentaar
     </a>
   </div>
   <div class="ui tab" data-tab="init">
-    <h3 class="ui header">Overview</h3>
-    <p>Semantic does not automatically attach any events on page load. You must decide which modules to initialize on each page by initializing a module in javascript.</p>
-    <div class="ui info message">It's okay to initialize an element multiple times, the element will automatically destroy the previous instance and re-initialize with the settings provided.</div>
-    <h3 class="ui header">Example of Initializing</h3>
-    <p>The following example shows how to attach behavior to elements on a page using Semantic</p>
+    <h3 class="ui header">Overzicht</h3>
+    <p>Semantic verbind niet automatisch events tijdens het laden van de pagina. Je moet beslissen welke modules op elke pagina initialiseren door een module te initialiseren in javascript.</p>
+    <div class="ui info message">Het is oke om een element meerdere keren te initialiseren, het element zal automatisch de vorige instantie vernietigen en herinitialiseren met de aangeleverde instellingen.</div>
+    <h3 class="ui header">Voorbeeld van Initialisatie</h3>
+    <p>Het volgende voorbeeld toont hoe je gedrag koppelt aan elementen op een pagina met behulp van Semantic</p>
     <div class="code" data-type="html" data-preview="true">
       <div class="ui medium image">
         <div class="ui corner label">
-          <i class="help link icon" data-content="This appears to the right"></i>
+          <i class="help link icon" data-content="Dit verschijnt rechts"></i>
         </div>
-        <img src="/images/demo/photo.jpg" data-content="This appears in the default location">
+        <img src="/images/demo/photo.jpg" data-content="Dit verschijnt in de standaard locatie">
       </div>
     </div>
     <div class="evaluated code" data-type="javascript">
-    // just initializing
+    // simpele initialisatie
     $('.ui.image img')
       .popup()
     ;
     </div>
     <div class="evaluated code" data-type="javascript">
-    // initializing with settings
+    // initialisatie met instellingen
     $('.ui.image .help')
       .popup({
         position: 'right center'
@@ -103,74 +103,74 @@ type        : 'Semantic'
       </div>
     </div>
     <div class="examples">
-      <h2 class="ui dividing header">Using Module Behaviors</h2>
-      <p>Behaviors are an element's API. They invoke functionality or return aspects of the current state for an element</p>
-      <p>Behaviors can be called using spaced words, camelcase or dot notation. The preferred method however is <b>spaced words</b>. Method lookup is done automatically internally.</p>
+      <h2 class="ui dividing header">Module Behaviors Gebruiken</h2>
+      <p>Behaviors vormen een element z'n API. Ze roepen functionaliteit aan of retourneren aspecten van de huidige staat van een element</p>
+      <p>Behaviors kunnen aangeroepen worden met behulp van woorden met spaties, camelcase of dot notatie. De voorkeursmethode is echter <b>woorden met spaties</b>. Method lookup wordt automatisch intern gedaan.</p>
 
-      <p>Behaviors can be called using the syntax:</p>
+      <p>Behaviors kunnen aangeroepen worden met de syntax:</p>
       <div class="code">
-      // both are the same
+      // beiden zijn hetzelfde
       $('.your.element')
         .module('behavior name', argumentOne, argumentTwo)
         .module('behaviorName', argumentOne, argumentTwo)
       ;
       </div>
 
-      <h3 class="ui header">Common Behaviors</h3>
-      <p>All modules have a set of core behaviors which allow you to configure the component</p>
+      <h3 class="ui header">Gemeenschappelijke Behaviors</h3>
+      <p>Alle modules hebben een set aan kern behaviors welke je toestaan om het component te configureren</p>
       <table class="ui celled definition sortable table segment">
         <thead>
-          <th>Name</th>
-          <th>Usage</th>
+          <th>Naam</th>
+          <th>Gebruik</th>
         </thead>
         <tbody>
           <tr>
             <td>initialize</td>
-            <td>Initializes an element, adding page event handlers and init data</td>
+            <td>Initialiseert een element en voegt pagina event handlers toe alsmede initialisatie data.</td>
           </tr>
           <tr>
             <td>destroy</td>
-            <td>Removes all changes to the page made by initialization</td>
+            <td>Verwijdert alle wijzigingen aan een pagina die zijn gemaakt door initialisatie.</td>
           </tr>
           <tr>
             <td>refresh</td>
-            <td>Refreshes cached values for a component</td>
+            <td>Ververst cached waardes voor een component.</td>
           </tr>
           <tr>
             <td>setting(setting, value)</td>
-            <td>Allows you to modify or read a component setting</td>
+            <td>Staat je toe een component instelling aan te passen of uit te lezen.</td>
           </tr>
           <tr>
             <td>invoke(query, passedArguments, instance)</td>
-            <td>Internal method used for translating sentence case method into an internal method</td>
+            <td>Interne methode gebruikt voor het vertalen van een zinsweergave methode in een interne methode.</td>
           </tr>
           <tr>
             <td>debug(comment, values)</td>
-            <td>Displays a log if a user has logging enabled</td>
+            <td>Toont een log indien de gebruiker logging heeft aangezet.</td>
           </tr>
           <tr>
             <td>verbose(comment, values)</td>
-            <td>Displays a log if a user has verbose logging enabled</td>
+            <td>Toont een log indien de gebruiker verbose logging heeft aangezet.</td>
           </tr>
           <tr>
             <td>error(name)</td>
-            <td>Displays a name error message from the component's settings</td>
+            <td>Toont een naam error bericht vanuit de instellingen van het component.</td>
           </tr>
           <tr>
             <td>performance log(comment, value)</td>
-            <td>Adds a performance trace for an element</td>
+            <td>Voegt prestatietraceringgegevens toe voor een element.</td>
           </tr>
           <tr>
             <td>performance display</td>
-            <td>Displays current element performance trace</td>
+            <td>Toont prestatie gegevens voor het huidige element.</td>
           </tr>
         </tbody>
       </table>
 
-      <h2 class="ui dividing header">Examples</h2>
+      <h2 class="ui dividing header">Voorbeelden</h2>
 
-      <h3 class="ui header">Overriding Internals</h3>
-      <p>Internal methods can be overwritten at run-time for individual instances of a module</p>
+      <h3 class="ui header">Interne Methodes Overriden</h3>
+      <p>Interne methodes kunnen overschreven worden tijdens run-time voor individuele instanties van een module.</p>
 
       <div class="evaluated code">
         // initialize both popups inline
@@ -191,8 +191,8 @@ type        : 'Semantic'
         ;
       </div>
 
-      <h3 class="ui header">Triggering Behavior</h3>
-      <p>Some behaviors can accept arguments, for example a popup <b>show</b> behavior can accept a callback function. This arbitrary example shows opening a popup then changing its position programatically</p>
+      <h3 class="ui header">Gedrag Activeren</h3>
+      <p>Sommige behaviors kunnen argumenten accepteren, bijvoorbeeld, een popup <b>show</b> behavior kan een callback functie accepteren als argument. Dit arbitraire voorbeeld toont het openen van een popup waarna z'n positie programmatisch gewijzigd wordt.</p>
       <div class="code" data-demo="true">
         // Sets a popup to top left position with an offset of negative five
         $('.demo.icon').first()
@@ -204,8 +204,8 @@ type        : 'Semantic'
           })
         ;
       </div>
-      <h3 class="ui header">Returning values</h3>
-      <p>Behaviors may also provide an API for accessing a module's internal state. For example popups have a method <code>is visible</code> which returns true or false for whether a popup is currently visible.</p>
+      <h3 class="ui header">Waardes retourneren</h3>
+      <p>Behaviors leveren mogelijk ook een API voor het benaderen van een modele z'n interne status. Bijvoorbeeld, popups hebben een methode <code>is visible</code> welke true of false retourneert afhankelijk van of een popup op het moment zichtbaar is.</p>
       <div class="code" data-demo="true">
         // returns boolean value instead of jQuery chain
         $('.demo.icon')
@@ -224,70 +224,70 @@ type        : 'Semantic'
 
   <div class="ui tab" data-tab="settings">
 
-    <p>Unlike many javascript components, anything arbitrary in Semantic is a setting. This means no need to dig inside the internals of the component to alter an expected css selector or class name, simply alter the settings object</p>
+    <p>Anders dan voor javascript componenten, is elk willekeurig iets in Semantic een instelling. Dit betekent dat het niet nodig is om door de interne structuur van het component te spitten om een verwachtte css selector of class name te veranderen. Verander simpelweg het instellingen object.</p>
 
-    <h3 class="ui header">Common Settings</h3>
-    <p>The following is a list of common settings usually found in javascript modules.
+    <h3 class="ui header">Algemene Instellingen</h3>
+    <p>Het volgende is een lijst met algemene instellingen die men gewoonlijk in javascript modules kan vinden.
     <table class="ui celled sortable definition table segment">
       <thead>
-        <th>Name</th>
-        <th>Usage</th>
+        <th>Naam</th>
+        <th>Gebruik</th>
       </thead>
       <tbody>
         <tr>
           <td>name</td>
-          <td>Name used in debug logs to differentiate this widget from other debug statements.</td>
+          <td>Naam gebruikt in debug logs om dit widget te onderscheiden van andere debug statements.</td>
         </tr>
         <tr>
           <td>debug</td>
-          <td>Whether to provide standard debug output to console.</td>
+          <td>Of er standaard debug uitvoer aan de console geleverd moet worden.</td>
         </tr>
         <tr>
           <td>performance</td>
-          <td>Whether to provide performance logging to console of internal method calls.</td>
+          <td>Of er prestatie informatie geleverd moet worden aan de console of interne methode aanroepen.</td>
         </tr>
         <tr>
           <td>verbose</td>
-          <td>Whether to provide extra debug output to console</td>
+          <td>Of er extra debug uitvoer aan de console geleverd moet worden.</td>
         </tr>
         <tr>
           <td>namespace</td>
-          <td>Namespace used for DOM event and metadata namespacing. Allows module's destroy method to not affect other modules.</td>
+          <td>Namespace welke wordt gebruikt voor DOM event en metadata namespacing. Staat een module z'n destroy methode toe om niet andere modules aan te raken.</td>
         </tr>
         <tr>
           <td>metadata</td>
-          <td>An object containing any metadata attributes used.</td>
+          <td>Een object dat alle gebruikte metadata attributen bevat.</td>
         </tr>
         <tr>
           <td>selectors</td>
-          <td>An object containing all selectors used in the module, these are usually children of the module.</td>
+          <td>Een object dat alle in de module gebruikte selectors bevat, deze zijn gewoonlijk children van de module.</td>
         </tr>
         <tr>
           <td>classNames</td>
-          <td>An object containing all class names used in the module.</td>
+          <td>Een object dat alle in de module gebruikte class names bevat.</td>
         </tr>
         <tr>
           <td>errors</td>
-          <td colspan="2">A javascript array of error statements used in the plugin. These may sometimes appear to the user, but most often appear in debug statements.
+          <td colspan="2">Een javascript array met error statements die in de plugin gebruikt worden. Deze worden soms getoond aan de gebruiker, maar komen meestal voor in debug statements.
           </td>
         </tr>
       </tbody>
     </table>
 
-    <h3 class="ui header">Changing Settings</h3>
-    <p>The following examples use <a href="/modules/popup.html">popup</a> as an example for how to modify settings</p>
+    <h3 class="ui header">Instellingen Wijzigen</h3>
+    <p>De volgende voorbeelden gebruiken <a href="/modules/popup.html">popup</a> als een voorbeeld van hoe men instellingen wijzigt.</p>
     <div class="ui ordered very relaxed list">
       <div class="item">
-        <div class="header">Setting module defaults</div>
-        Default settings for the module can be overridden by modifying <b>$.fn.module.settings</b>.
+        <div class="header">Module defaults instellen</div>
+        Default instellingen van een module kunnen overschreven worden door <b>$.fn.module.settings</b> aan te passen.
         <br>
         <div class="code">
         $.fn.popup.settings.moduleName = 'Godzilla';
         </div>
       </div>
       <div class="item">
-        <div class="header">At initialization</div>
-        A settings object can be passed in when initializing the plugin
+        <div class="header">Tijdens initialisatie</div>
+        Een instellingen object kan worden doorgegeven wanneer de plugin initialiseert.
         <br>
       <div class="code">
       $('.foo')
@@ -299,8 +299,8 @@ type        : 'Semantic'
       </div>
       </div>
       <div class="item">
-        <div class="header">After initialization</div>
-        Settings can be changed after a module is initialized by calling the 'settings' method on the module with either a settings object or a name, value pair.
+        <div class="header">Na initialisatie</div>
+        Instellingen kunnen worden aangepast nadat een module is geinitialiseerd door de 'settings' methode aan te roepen op de module met of een instellingen object of een naam, waarde paar.
         <br>
       <div class="code">
       $('.foo')
@@ -317,8 +317,8 @@ type        : 'Semantic'
       </div>
       </div>
     </div>
-    <h3 class="ui header">Reading Settings</h3>
-    <p>Settings can also be read programmatically:
+    <h3 class="ui header">Instellingen Uitlezen</h3>
+    <p>Instellingen kunnen ook programmatisch uitgelezen worden:
     <div class="code">
       // outputs 'godzilla' (1) or ['godzilla', 'godzilla'...] (2 or more)
       $('.foo').popup('setting', 'moduleName');

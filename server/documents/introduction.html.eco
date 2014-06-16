@@ -3,7 +3,7 @@ layout      : 'default'
 css         : 'guide'
 title       : "Wat is Anders"
 description : 'Semantic onderscheiden van de rest'
-type        : 'UI Introductie'
+type        : 'UI Introduction'
 ---
 <script src="/javascript/intro.js"></script>
 

@@ -2,8 +2,8 @@
 layout      : 'default'
 css         : 'guide'
 
-title       : 'Overview'
-description : 'An introduction to Semantic style coding'
+title       : 'Overzicht'
+description : 'Een introductie tot Semantic stijl coderen'
 type        : 'UI Introduction'
 ---
 <script src="/javascript/intro.js"></script>
@@ -21,41 +21,40 @@ $(document)
 <div class="main container">
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
-      <a class="active item">Interfacing</a>
+      <a class="active item">Interfacen</a>
       <a class="item">APIs</a>
     </div>
   </div>
-  <h2 class="ui dividing header">Interfacing Carefully</h2>
+  <h2 class="ui dividing header">Voorzichtig Interfacen</h2>
 
-  <p>UI definitions in Semantic are given the class name <code>ui</code>. This is to help tell the difference between ui elements and parts of the definition of an element. This means any element with the class name UI has a corresponding UI definition.
+  <p>UI definities in Semantic krijgen de class name <code>ui</code>. Dit is om te helpen het verschil aan te tonen tussen ui elementen en delen van de definitie van een element. Dit betekent dat elk element met de class name <code>ui</code> een overeenkomstige UI definitie heeft.
 
-  <p>For example a menu may have menu items inside of it. These items are contained as part of the menu definition but do not receive the class name <code>ui</code> because they are part of a UI menu collection.</p>
+  <p>Een menu kan bijvoorbeeld menu items in zich hebben. Deze items zijn onderdeel van de menu definitie maar krijgen niet de class name <code>ui</code> omdat zij onderdeel zijn van een UI menu collectie.</p>
 
-  <div class="code" data-type="html" data-title="A Simple Menu" data-preview="true">
+  <div class="code" data-type="html" data-title="Een Simpel Menu" data-preview="true">
     <div class="ui menu">
       <a class="item">Home</a>
       <a class="item">Inbox</a>
     </div>
   </div>
 
-  <h3 class="ui header">Changing an Element</h3>
+  <h3 class="ui header">Een Element Wijzigen</h3>
 
-  <p>Class names in Semantic always use single english words. If a class name is an adjective it is either a <a href="/introduction/types.html">type</a> of element or <a href="/introduction/variations.html">variation</a> of an element. <b>CSS definitions always define adjectives in the context of a noun</b>. In this way class names cannot pollute the namespace.</p>
+  <p>Class names in Semantic gebruiken altijd enkelvoudige Engelse woorden. Indien een class name een adjectief is, is het of een <a href="/introduction/types.html">type</a> element of een <a href="/introduction/variations.html">variatie</a> van een element. <b>CSS definities definiëren altijd adjectieven in de context van een zelfstandig naamwoord</b>. Op deze manier kunnen class names niet de namespace vervuilen.</p>
 
-  <div class="code" data-type="html" data-title="A Compact Menu Variation" data-preview="true">
+  <div class="code" data-type="html" data-title="Een Compacte Menu Variatie" data-preview="true">
     <div class="ui compact menu">
       <a class="item">Home</a>
       <a class="item">Inbox</a>
     </div>
   </div>
-  <div class="ui divider"></div>
 
-  <h3 class="ui header">Combining elements</h3>
-  <p>All UI definitions in semantic are stand-alone, and do not require other components to function. However, components can choose to have optional couplings with other components.</p>
+  <h3 class="ui header">Elementen combineren</h3>
+  <p>Alle UI definities in Semantic zijn stand-alone, en vereisen geen andere componenten om te functioneren. Echter, componenten kunnen ervoor kiezen om optionele koppelingen te hebben met andere componenten.</p>
 
-  <p>For example you might want to include a badge inside a menu. A label inside of a menu will automatically function as a badge.</p>
+  <p>Zo wil je misschien een badge in een menu stoppen bijvoorbeeld. Eeen label in een menu zal automatisch functioneren als een badge.</p>
 
-  <div class="code" data-type="html" data-title="Using a UI Label inside a UI Menu" data-preview="true">
+  <div class="code" data-type="html" data-title="Een UI Label gebruiken binnen een UI Menu" data-preview="true">
     <div class="ui compact menu">
       <a class="item">Home</a>
       <a class="item">
@@ -67,28 +66,28 @@ $(document)
 
   <h2 class="ui dividing header">Semantic APIs</h2>
 
-  <p>Modules define a public API using verbs and simple phrases. When methods are invoked internally those phrases are matched to internal methods automatically.</p>
+  <p>Modules definiëren een publieke API met behulp van werkwoorden en simpele zinssnedes. Wanneer methodes aangeroepen worden, worden die zinssnedes intern automatisch gekoppeld aan interne methodes.</p>
 
     <div class="code" data-type="html" data-label="true" data-preview="true">
     <div class="ui pointing secondary demo menu">
-      <a class="active red item" data-tab="first">First</a>
-      <a class="blue item" data-tab="second">Second</a>
-      <a class="green item" data-tab="third">Third</a>
+      <a class="active red item" data-tab="first">Eerste</a>
+      <a class="blue item" data-tab="second">Tweede</a>
+      <a class="green item" data-tab="third">Derde</a>
     </div>
-    <div class="ui active tab segment" data-tab="first">First</div>
-    <div class="ui tab segment" data-tab="second">Second</div>
-    <div class="ui tab segment" data-tab="third">Third</div>
+    <div class="ui active tab segment" data-tab="first">Eerste</div>
+    <div class="ui tab segment" data-tab="second">Tweede</div>
+    <div class="ui tab segment" data-tab="third">Derde</div>
     </div>
-        <h3 class="ui header">Opening a new tab with a behavior</h3>
-        <p>Modules have simple behaviors for triggering common actions</p>
+        <h3 class="ui header">Een nieuwe tab openen met een behavior</h3>
+        <p>Modules hebben eenvoudig gedrag voor het activeren van algemene acties</p>
         <div class="code" data-demo="true">
     $('.demo.menu .item')
       .tab('change tab', 'second')
     ;
         </div>
 
-        <h3 class="ui header">Opening a new tab with multiple behaviors</h3>
-        <p>Any internal behavior is accessible as well</p>
+        <h3 class="ui header">Een nieuwe tab openen met meerdere behaviors</h3>
+        <p>Elke interne behavior is ook toegangkelijk</p>
         <div class="code" data-demo="true">
     $('.demo.menu .item')
       .tab('deactivate all')
@@ -96,8 +95,8 @@ $(document)
       .tab('activate navigation', 'third')
     ;
         </div>
-      <h3 class="ui header">Turning on HTML5 State</h3>
-      <p>Modules can be re-initialized at any time with different settings</p>
+      <h3 class="ui header">HTML5 State Aan Zetten</h3>
+      <p>Modules kunnen op elk moment met nieuwe instellingen ge-herinitialiseerd worden</p>
         <div class="code" data-demo="true">
     $('.demo.menu .item')
       .tab({
@@ -110,7 +109,7 @@ $(document)
   <div class="ui divider"></div>
 
   <a class="ui large right labeled teal icon button" href="/introduction/types.html">
-    Next: UI Types
+    Eerstvolgend: UI Types
     <i class="right arrow icon"></i>
   </a>
 

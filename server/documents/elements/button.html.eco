@@ -2,7 +2,7 @@
 layout      : 'default'
 css         : 'button'
 title       : 'Button'
-description : 'Buttons indicate a possible user action.'
+description : 'Buttons geven een mogelijke gebruikers actie aan.'
 type        : 'UI Element'
 ---
 <script src="/javascript/button.js"></script>
@@ -14,41 +14,41 @@ type        : 'UI Element'
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
       <a class="active item">Types</a>
-      <a class="item">Groups</a>
-      <a class="item">States</a>
-      <a class="item">Variations</a>
+      <a class="item">Groepen</a>
+      <a class="item">Stattusen</a>
+      <a class="item">Variaties</a>
     </div>
   </div>
   <h2 class="ui dividing header">Types</h2>
 
   <div class="follow example">
     <h4 class="ui header">Button</h4>
-    <p>A standard button</p>
+    <p>Een standaard button</p>
     <div class="ui button">
-      Follow
+      Volg
     </div>
   </div>
 
   <div class="example">
-    <h4 class="ui header">Animated</h4>
-    <p>A button can animate to show hidden content</p>
-    <div class="ui ignored message">The button will be automatically sized according to the visible content size. Make sure there is enough room for the hidden content to show</div>
+    <h4 class="ui header">Geanimeerd</h4>
+    <p>Een button kan animeren om verborgen inhoud te tonen</p>
+    <div class="ui ignored message">De button zal automatisch wijzigen qua grootte afhankelijk van de zichtbare inhoud grootte. Zorg ervoor dat er genoeg ruimte is voor de verborgen inhoud om getoond te worden</div>
     <div class="ui animated button">
-      <div class="visible content">Next</div>
+      <div class="visible content">Volgende</div>
       <div class="hidden content">
         <i class="right arrow icon"></i>
       </div>
     </div>
     <div class="ui vertical animated button">
-      <div class="hidden content">Shop</div>
+      <div class="hidden content">Winkel</div>
       <div class="visible content">
         <i class="cart icon"></i>
       </div>
     </div>
     <div class="ui animated fade button">
-      <div class="visible content">Sign-up for a Pro account</div>
+      <div class="visible content">Meld je aan voor een Pro account</div>
       <div class="hidden content">
-        $12.99 a month
+        €15.99 per maand
       </div>
     </div>
 
@@ -56,40 +56,40 @@ type        : 'UI Element'
 
 
   <div class="example">
-    <h4 class="ui header">Icon</h4>
-    <p>A button can have only an icon</p>
+    <h4 class="ui header">Icoon</h4>
+    <p>Een button kan alleen een icoon hebben</p>
     <div class="ui icon button">
       <i class="cloud icon"></i>
     </div>
   </div>
 
   <div class="example">
-    <h4 class="ui header">Labeled Icon</h4>
-    <p>A button can have an icon and a label</p>
+    <h4 class="ui header">Geëtiketteerd Icoon</h4>
+    <p>Een button kan een icoon en een etiket hebben</p>
     <div class="ui labeled icon button">
       <i class="pause icon"></i>
-      Pause
+      Pauze
     </div>
     <div class="ui right labeled icon button">
       <i class="right arrow icon"></i>
-      Next
+      Volgend
     </div>
   </div>
-  <h2 class="ui dividing header">Groups</h2>
+  <h2 class="ui dividing header">Groepen</h2>
 
   <div class="example">
     <h4 class="ui header">Buttons</h4>
-    <p>Buttons can exist together as a group</p>
+    <p>Buttons kunnen samen bestaan als group</p>
     <div class="ui buttons">
-      <div class="ui button">One</div>
-      <div class="ui button">Two</div>
-      <div class="ui button">Three</div>
+      <div class="ui button">Een</div>
+      <div class="ui button">Twee</div>
+      <div class="ui button">Drie</div>
     </div>
   </div>
 
   <div class="example">
     <h4 class="ui header">Icons</h4>
-    <p>Button groups can show groups of icons</p>
+    <p>Button groepen kunnen groupen van iconen tonen</p>
     <div class="ui icon buttons">
       <div class="ui button"><i class="align left icon"></i></div>
       <div class="ui button"><i class="align center icon"></i></div>
@@ -106,21 +106,21 @@ type        : 'UI Element'
 
   <div class="example">
     <h4 class="ui header">Conditionals</h4>
-    <p>Button groups can be separated by conditionals</p>
+    <p>Button groepen kunnen gesplitst worden door conditionals</p>
     <div class="ui buttons">
-      <div class="ui button">Cancel</div>
+      <div class="ui button">Annuleer</div>
       <div class="or"></div>
-      <div class="ui positive button">Save</div>
+      <div class="ui positive button">Bewaar</div>
     </div>
   </div>
 
-  <h2 class="ui dividing header">States</h2>
+  <h2 class="ui dividing header">Statussen</h2>
 
   <div class="example">
     <h4 class="ui header">Hover</h4>
-    <p>A button can change to show a user has hovered their mouse</p>
+    <p>Een button kan veranderen om te tonen dat de gebruiker hovered met zijn muis</p>
     <div class="ui hover button">
-      Follow
+      Volg
     </div>
   </div>
 

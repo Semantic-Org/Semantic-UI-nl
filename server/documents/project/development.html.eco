@@ -2,8 +2,8 @@
 layout      : 'default'
 css         : 'guide'
 
-title       : 'Local Docs'
-description : 'A guide to generating docs locally'
+title       : 'Lokale Documentatie'
+description : 'Een gids voor het genereren van lokale documentatie'
 type        : 'Semantic Project'
 ---
 <script src="/javascript/intro.js"></script>
@@ -12,109 +12,109 @@ type        : 'Semantic Project'
 <div class="main container">
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
-      <a class="active item">Install Steps</a>
-      <a class="item">Using Grunt</a>
+      <a class="active item">Installatie Stappen</a>
+      <a class="item">Grunt Gebruiken</a>
     </div>
   </div>
 
-  <h2 class="ui dividing header">Step by Step</h2>
+  <h2 class="ui dividing header">Stap voor Stap</h2>
 
-  <p>It may be useful to run the development docs locally when working on a forked version of semantic, as the docs themselves help in testing out changes to ui components.</p>
+  <p>Het kan handig zijn om de ontwikkel documentatie lokaal te draaien wanneer je aan een geforkede versie van Semantic werkt, sinds de documentatie zelf help in het testen van wijzigingen aan ui componenten.</p>
 
-  <h3 class="ui header">1. Install Node</h3>
-  <p>Semantic docs are written in DocPad which requires NodeJS. </p>
+  <h3 class="ui header">1. Installeer Node</h3>
+  <p>Semantic documentatie is geschreven in DocPad wat NodeJS vereist. </p>
 
-  <div class="ui warning message">Make sure npm does not require sudo to operate, this might cause permissions issues.</div>
+  <div class="ui warning message">Zorg ervoor dat npm geen sudo vereist om te werken, dit kan voor permissie problemen zorgen.</div>
 
-  <p>There are many tutorials online on how to install node in your environment, here are a few we think are helpful:</p>
+  <p>Er zijn veel handleidingen online over hoe je node in jouw omgeving kan installeren, hier zijn een paar die wij nuttig vonden:</p>
 
   <ul class="ui list">
     <li><a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">Node JS via Package Manager</a></li>
-    <li><a href="https://gist.github.com/isaacs/579814">Installing Node JS without sudo</a></li>
+    <li><a href="https://gist.github.com/isaacs/579814">Node JS installeren zonder sudo</a></li>
   </ul>
 
   <h3 class="ui header">2. Fork Semantic</h3>
 
   <iframe src="http://ghbtns.com/github-btn.html?user=semantic-org&repo=semantic-ui&type=fork&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="90" height="30"></iframe>
-  <p>Fork the Semantic repo into a directory on your local machine and navigate into that directory</p>
+  <p>Fork de Semantic repository in een directory op je lokale machine en navigeer naar die directory</p>
 
-  <p>Alternatively, you can <a href="https://github.com/Semantic-Org/Semantic-UI/archive/master.zip">download the entire repository as a zip</a> instead of using Git</p>
+  <p>Een andere optie is om <a href="https://github.com/Semantic-Org/Semantic-UI/archive/master.zip">de hele repository als zip te downloaden</a> in plaats van Git te gebruiken.</p>
 
-  <h3 class="ui header">3. Install Dependencies</h3>
-  <p>NPM (Node Package Manager) keeps track of all the dependencies required for the project.</p>
+  <h3 class="ui header">3. Installeer Afhankelijkheden</h3>
+  <p>NPM (Node Package Manager) houdt alle afhankelijkheden bij die benodigd zijn voor het project.</p>
 
-  <p>Updating npm inside the local directory will grab all development dependencies from <code>package.json</code> and store them in the root of the project.</p>
+  <p>NPM updaten in de lokale directory zal alle ontwikkel afhankelijkheden ophalen via <code>package.json</code> en ze opslaan in de root van het project.</p>
 
-  <div class="code" data-title="Installing dependencies" data-type="terminal">
+  <div class="code" data-title="Afhankelijkheden installeren" data-type="terminal">
     npm update; npm install;
   </div>
 
-  <h3 class="ui header">4a Creating Packages for Server</h3>
+  <h3 class="ui header">4a Packages Maken voor Server</h3>
 
 
-  <p>Additionally your server needs to have the latest version of Semantic built before the documentation will appear formatted correctly. Running <code>grunt build</code> will create a version of the library at <code>docs/build</code> available for your server</p>
+  <p>Erbij komt dat je server de laatste versie gebouwd dient te hebben van Semantic alvorens de documentatie correct getoond zal worden. Het uitvoeren van <code>grunt build</code> zal een versie van de bibliotheek maken beschikbaar maken voor je server in de <code>docs/build</code> directory.</p>
 
-  <div class="code" data-title="Updating semantic for docs" data-type="terminal">
+  <div class="code" data-title="Semantic updaten voor docs" data-type="terminal">
     grunt build
   </div>
-  <h3 class="ui header">4b Watching Files</h3>
+  <h3 class="ui header">4b Files In De Gaten Houden</h3>
 
-  <p>Docpad will automatically generate a static (html/css only) version of the documentation everytime you update a file inside <code>server/</code></p>
+  <p>Docpad zal automatisch een statische (html/css only) versie van de documentatie maken, elke keer als je een bestand in <code>server/</code> aanpast.</p>
 
-  <p>If you would like it to build semantic everytime you edit a file inside <code>src/</code> you will have to run the grunt watch script.</p>
+  <p>Als je wilt dat Semantic gebouwd wordt iedere keer dat je een bestand aanpast in de <code>src/</code> directory, zul je het grunt watch script moeten uitvoeren.</p>
 
-  <div class="code" data-title="Installing dependencies" data-type="terminal">
+  <div class="code" data-title="Afhankelijkheden installeren" data-type="terminal">
     grunt watch;
   </div>
 
-  <h3 class="ui header">4c. Start Your Server</h3>
+  <h3 class="ui header">4c. Start Je Server</h3>
 
-  <p>Now that you've installed all the dependencies, starting your server should be a simple command</p>
+  <p>Nu je alle afhankelijkheden hebt geinstalleerd, zou het starten van je server een simpel commando moeten zijn</p>
 
-  <div class="code" data-title="Starting server locally" data-type="terminal">
+  <div class="code" data-title="Server lokaal starten" data-type="terminal">
     docpad run
   </div>
 
-  <p>Docpad should now run the documentation on a local server accessible at <code>http://localhost:9778</code></p>
+  <p>Docpad zou nu de documentatie op een lokale server moeten draaien die beschikbaar is onder <code>http://localhost:9778</code></p>
 
-  <p>A static version of the documentation will be generated every time you make a change to a document. This will also be available in the <code>docs/</code> folder.
+  <p>Een statische versie van de documentation wordt gegenereerd elke keer als je een wijziging maakt aan een document. Dit zal ook beschikbaar zijn in de <code>docs/</code> folder.
 
-  <h3 class="ui header">5. (Optional) Install Karma</h3>
+  <h3 class="ui header">5. (Optioneel) Installeer Karma</h3>
 
   <p>
-    Unit tests are written in Jasmine, but are run using a test runner called Karma. To install karma you need to grab the npm package.
+    Unit tests zijn geschreven in Jasmine, maak worden gedraaid met behulp van een test runner genaamd Karma. Om Karma te installeren dien je het npm package te grijpen.
   </p>
-  <div class="code" data-title="Installing Test Runner" data-type="terminal">
+  <div class="code" data-title="Test Runner Installeren" data-type="terminal">
     npm install -g karma
   </div>
 
-  <p>Installing Karma will allow you to run the unit tests on Javascript to ensure all tests are passed when changes are made to javascript code. This will also occur automatically when you create a pull request</p>
+  <p>Karma installeren stelt je in staat om de unit tests voor Javascript te draaien zodat je kan controleren of alle tests oke zijn bij het maken van aanpassingen aan javascript code. Dit gebeurt ook automatisch wanneer je een pull request maakt.</p>
 
-  <h2 class="ui dividing header">Using Grunt</h2>
+  <h2 class="ui dividing header">Grunt Gebruiken</h2>
 
-  <h3 class="ui header">Watch Changes in Source</h3>
+  <h3 class="ui header">Wijzigingen in de Broncode Bekijken</h3>
 
-  <p>If you are working on fixing a UI component that is part of Semantic, your best bet is to work actively on the file in <code>/src/{type}/{elementname}/</code> while running a watch script from grunt. This will rebuild the docs after you make changes, so you can see if you have corrected the issue you are fixing.</p>
+  <p>Als je werkt aan het oplossen van een probleem met een UI component dat onderdeel is van Semantic, is het het beste om actief te werken aan het bestand in <code>/src/{type}/{elementname}/</code> terwijl je een watch script van grunt draait. Dit zal de documentatie herbouwen nadat je wijzigingen maakt, zodat je kan zien of je het probleem dat je probeert te repareren hebt opgelost.</p>
 
-  <p>To see exactly what this grunt tasks is doing view our <a href="https://github.com/semantic-org/Semantic-UI/blob/master/Gruntfile.js">commented gruntfile</a></p>
+  <p>Om exact te zien wat deze grunt taken aan het doen zijn, bekijk onze <a href="https://github.com/semantic-org/Semantic-UI/blob/master/Gruntfile.js">becommentarieerde gruntfile</a></p>
 
-  <div class="code" data-title="Watching Changes" data-type="terminal">
+  <div class="code" data-title="Wijzigingen in de gaten houden" data-type="terminal">
     grunt
   </div>
 
-  <p>The watch task is the default grunt task for Semantic, so you can start it quite simply. This will copy files automatically from the <code>src</code> directory, compiling LESS files, whenever any changes are made.</p>
+  <p>De watch taak is de standaard grunt taak voor Semantic, dus kan je het zeer eenvoudig opstarten. Dit zal automatisch bestanden van de <code>src</code> directory kopieren, de LESS bestanden compileren, wanneer er wijzigingen zijn gemaakt.</p>
 
-  <h3 class="ui header">Run Unit Tests</h3>
-  <p>Tests will automatically run with <code>grunt watch</code> if you have started karma</p>
+  <h3 class="ui header">Unit Tests Draaien</h3>
+  <p>Tests zullen automatisch draaien met <code>grunt watch</code> als je Karma hebt gestart</p>
 
-  <div class="code" data-title="Execute tests while developing" data-type="terminal">
+  <div class="code" data-title="Tests draaien terwijl je ontwikkeld" data-type="terminal">
     karma start
     grunt watch
   </div>
 
-  <p>You can also run the test suite manually</p>
-  <div class="code" data-title="Execute tests while developing" data-type="terminal">
+  <p>Je kan de test suite ook handmatig draaien</p>
+  <div class="code" data-title="Tests draaien terwijl je ontwikkeld" data-type="terminal">
     npm test
     // or
     grunt test
@@ -122,10 +122,10 @@ type        : 'Semantic Project'
     karma run
   </div>
 
-  <h3 class="ui header">Build Semantic Packages Locally</h3>
-  <p>There is also a separate grunt command for building minified, packaged, and compressed versions of the library. This might be useful when creating custom builds of Semantic.</p>
+  <h3 class="ui header">Semantic Packages Lokaal Bouwen</h3>
+  <p>Er is ook een apart grunt commando voor het bouwen van minified, packaged, en gecomprimeerde versies van de bibliotheek. Dit kan handig zijn wanneer je custom builds van Semantic maakt.</p>
 
-  <div class="code" data-title="Building Release Files" data-type="terminal">
+  <div class="code" data-title="Release Bestanden Bouwen" data-type="terminal">
     grunt build
   </div>
 
@@ -134,7 +134,7 @@ type        : 'Semantic Project'
 
   <div class="ui divider"></div>
   <a class="ui large right labeled teal icon button" href="/introduction.html">
-    Next: Library Introduction
+    Eerstvolgend: Bibliotheek Introductie
     <i class="right arrow icon"></i>
   </a>
 </div>
