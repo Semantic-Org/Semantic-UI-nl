@@ -2,8 +2,8 @@
 layout      : 'default'
 css         : 'progress'
 
-title       : 'UI Elements'
-description : 'Elements are the basic building blocks of a website.'
+title       : 'UI Elementen'
+description : 'Elementen zijn de basis bouw blokken van een website.'
 type        : 'Semantic'
 ---
 
@@ -48,7 +48,7 @@ type        : 'Semantic'
     <div class="item">
       <div class="image">
         <div class="ui teal labeled icon button">
-          <i class="icon user add"></i>Follow
+          <i class="icon user add"></i>Volg
         </div>
         <br><br>
         <div class="ui black icon buttons">
@@ -59,7 +59,7 @@ type        : 'Semantic'
       </div>
       <div class="content">
         <a href="elements/button.html" class="name">Button</a>
-        <p>A button indicates a possible user action.</p>
+        <p>Een button duidt een mogelijke gebruikersactie aan.</p>
       </div>
     </div>
     <div class="item">
@@ -68,19 +68,19 @@ type        : 'Semantic'
       </div>
       <div class="content">
         <a href="elements/divider.html" class="name">Divider</a>
-        <p>A divider visually segments content into separate groups</p>
+        <p>Een divider verdeeld inhoud visueel in verschillende groepen.</p>
       </div>
     </div>
     <div class="item">
       <div class="image">
         <h2 class="ui blue block header">
-          Section 2
-          <div class="sub header">The second section of the website</div>
+          Sectie 2
+          <div class="sub header">De tweede sectie van het website.</div>
         </h2>
       </div>
       <div class="content">
         <a href="elements/header.html" class="name">Header</a>
-        <p>Headers provide a short summary of content</p>
+        <p>Headers leveren een korte samenvatting van inhoud.</p>
       </div>
     </div>
     <div class="item">
@@ -91,7 +91,7 @@ type        : 'Semantic'
       </div>
       <div class="content">
         <a href="elements/progress.html" class="name">Progress Bar</a>
-        <p>A progress bar displays progress on a task</p>
+        <p>Een progress bar toont de voortgang van een taak.</p>
       </div>
     </div>
     <div class="item">
@@ -102,7 +102,7 @@ type        : 'Semantic'
       </div>
       <div class="content">
         <a href="elements/segment.html" class="name">Segment</a>
-        <p>A segment is used to create a grouping of related content.</p>
+        <p>Een segment wordt gebruikt om een groepering van gerelateerde inhoud te maken.</p>
       </div>
     </div>
     <div class="item">
@@ -116,29 +116,29 @@ type        : 'Semantic'
       </div>
       <div class="content">
       <a href="elements/image.html" class="name">Image</a>
-      <p>An image is a graphic representation of something</p>
+      <p>Een image is een grafische afbeelding van iets.</p>
       </div>
     </div>
     <div class="item">
       <div class="image">
         <div class="ui four fluid steps">
           <div class="ui step">
-            First
+            Eerste
           </div>
           <div class="ui active step">
-            Second
+            Tweede
           </div>
           <div class="ui disabled step">
-            Third
+            Derde
           </div>
           <div class="ui disabled step">
-            Last
+            Laatste
           </div>
         </div>
       </div>
       <div class="content">
         <a href="elements/step.html" class="name">Step</a>
-        <p>Steps show the current activity in a series of steps.</p>
+        <p>Steps tonen de huidige activiteit in een serie van stappen.</p>
       </div>
     </div>
     <div class="item">
@@ -233,21 +233,21 @@ type        : 'Semantic'
       </div>
       <div class="content">
         <a href="elements/icon.html" class="name">Icon</a>
-        <p>An icon is a glyph used to represent another concept more simply</p>
+        <p>Een icon is een glief welke wordt gebruikt om een ander concept eenvoudiger aan te duiden.</p>
       </div>
     </div>
     <div class="item">
       <div class="image">
-        <div class="ui red label">Dog</div>
+        <div class="ui red label">Hond</div>
         <div class="ui teal corner label">
-          <div class="text">New</div>
+          <div class="text">Nieuw</div>
         </div>
         <br><br>
         <div class="ui blue ribbon label">HTML</div>
       </div>
       <div class="content">
         <a href="elements/label.html" class="name">Label</a>
-        <p>Labels give descriptions to sections of content.</p>
+        <p>Labels geven beschrijvingen aan delen van inhoud.</p>
       </div>
     </div>
   </div>

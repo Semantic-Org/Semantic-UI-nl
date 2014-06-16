@@ -1,7 +1,7 @@
 ---
 layout : 'default'
 css    : 'index'
-title  : 'Introduction'
+title  : 'Introductie'
 type   : 'Semantic'
 ---
 
@@ -16,9 +16,9 @@ type   : 'Semantic'
     <div class="column">
       <div class="introduction">
         <h1 class="ui header">Semantic UI <a class="ui black label" href="https://github.com/semantic-org/Semantic-UI/blob/master/RELEASE%20NOTES.md">0.18.0</a></h1>
-        <h2 class="ui header">UI is the vocabulary of the web.</h2>
-        <p>Semantic empowers designers and developers by creating a language for sharing UI.</p>
-        <a class="ui black large labeled launch icon button"><i class="icon list layout"></i> View UI</a>
+        <h2 class="ui header">UI is het vocabulaire van het web.</h2>
+        <p>Semantic stelt ontwerpers en ontwikkelaars in staat UI te delen door een taal te creëren.</p>
+        <a class="ui black large labeled launch icon button"><i class="icon list layout"></i> Bekijk UI</a>
         <a class="ui red large labeled icon button" href="build/semantic.zip"><i class="awesome download cloud icon"></i> Download</a>
       </div>
       <div class="inverted advertisement">
@@ -40,13 +40,13 @@ type   : 'Semantic'
       <h2 class="ui header">
         <i class="circular emphasized book icon"></i>
         <div class="content">
-          Lose the Hieroglyphics
-          <div class="sub header">Semantic is structured around natural language conventions to make development more intuitive.
+          Geef de Hiërogliefen op
+          <div class="sub header">Semantic is gestructureerd rondom natuurlijke taal conventies om ontwikkeling meer intuitief te maken.
           </div>
         </div>
       </h2>
       <div class="ui message">
-        Semantic is tag agnostic meaning you can use <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list" target="_blank">any html tags</a> with UI elements.
+        Semantic is tag-agnostisch, in de zin dat je <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list" target="_blank">iedere html tag</a> kan gebruiken met UI elementen.
       </div>
       <div class="ui stackable two column grid">
         <div class="column">
@@ -73,12 +73,12 @@ type   : 'Semantic'
           <a class="ui teal label" href="/collections/menu.html">Semantic</a>
           <div class="code" data-type="html">
           <nav class="ui menu">
-            <h3 class="header item">Title</h3>
+            <h3 class="header item">Titel</h3>
             <a class="active item">Home</a>
             <a class="item">Link</a>
             <a class="item">Link</a>
             <span class="right floated text item">
-              Signed in as <a href="#">user</a>
+              Ingelogd als <a href="#">gebruiker</a>
             </span>
           </nav>
           </div>
@@ -87,12 +87,12 @@ type   : 'Semantic'
           <div class="ui black label">Bootstrap</div>
           <div class="code" data-type="html">
           <div class="navbar">
-            <a class="navbar-brand" href="#">Title</a>
+            <a class="navbar-brand" href="#">Titel</a>
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
-              <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">User</a></p>
+              <p class="navbar-text pull-right">Ingelogd als <a href="#" class="navbar-link">gebruiker</a></p>
             </ul>
           </div>
           </div>
@@ -102,7 +102,7 @@ type   : 'Semantic'
           <div class="code" data-type="html">
           <button class="large ui button">
             <i class="heart icon"></i>
-            Like it
+            Like
           </button>
           </div>
         </div>
@@ -124,7 +124,7 @@ type   : 'Semantic'
     <div class="column">
       <h2 class="ui huge inverted center aligned icon header">
         <i class="circular emphasized inverted teal chat outline icon"></i>
-        <div class="content">Have a conversation with your components<div class="sub header">Semantic gives you a variety of UI components with real-time debug output, letting your code tell you what its doing.</div>
+        <div class="content">Hou een gesprek met je componenten<div class="sub header">Semantic geeft je een verscheidenheid aan UI componenten met realtime debug output, wat je code jou laat vertellen wat het doet.</div>
         </div>
       </h2>
       <div class="ui inverted horizontal section divider">
@@ -133,8 +133,8 @@ type   : 'Semantic'
       <div class="ui stackable grid" data-demo="true">
         <div class="row">
           <div class="ten wide column">
-          <div class="ui teal header">Open up your web console.</div>
-          <p>Semantic provides tracing for javascript behavior so your components can tell you what they're doing as they do it.</p>
+          <div class="ui teal header">Open je web console.</div>
+          <p>Semantic levert tracing voor javascript gedrag zodat je componenten jou kunnen vertellen wat ze doen op het moment dat ze het aan het doen zijn.</p>
           <div class="code" data-type="javascript" data-demo="true">
           $('.kitten.image')
             .transition({
@@ -148,7 +148,7 @@ type   : 'Semantic'
             <div class="ui black top attached label">Console</div>
             <pre class="console"></pre>
           </div> -->
-          <a href="module.html" class="ui teal right labeled button">Learn about modules <i class="right arrow icon"></i></a>
+          <a href="module.html" class="ui teal right labeled button">Leer over modules <i class="right arrow icon"></i></a>
           </div>
           <div class="five wide right floated column">
             <img src="/images/cat.png" class="ui kitten image">
@@ -162,36 +162,36 @@ type   : 'Semantic'
   <h2 class="ui center aligned icon header">
     <i class="circular emphasized lab icon"></i>
     <div class="content">
-      Alter Designs Effortlessly
-      <div class="sub header">Redesign without lifting a finger
+      Wijzig Ontwerpen Moeiteloos
+      <div class="sub header">Herontwerp zonder een vinger op te tillen
       </div>
     </div>
   </h2>
 <div class="ui page grid">
   <div class="column">
-    <h3 class="ui header">Let's create some tabs</h3>
+    <h3 class="ui header">Laten we een paar tabs maken</h3>
     <div class="code" data-preview="true" data-type="html">
     <div class="ui menu">
       <div class="header item">Site.com</div>
-      <a class="item">Browse</a>
-      <a class="active item">Search</a>
-      <a class="item">Help</a>
+      <a class="item">Blader</a>
+      <a class="active item">Zoek</a>
+      <a class="item">Hulp</a>
     </div>
     <div class="ui segment">
-      <p>Tab content</p>
+      <p>Tab inhoud</p>
     </div>
     </div>
     <div class="ui divider"></div>
-    <h3 class="ui header">Hmm maybe it should point to the content below it</h3>
+    <h3 class="ui header">Hmm misschien zou het naar de inhoud eronder moeten wijzen</h3>
     <div class="code" data-preview="true" data-type="html">
     <div class="ui pointing menu">
       <div class="header item">Site.com</div>
       <a class="item">Home</a>
-      <a class="active item">About</a>
+      <a class="active item">Over</a>
       <a class="item">Contact</a>
     </div>
     <div class="ui segment">
-      <p>Tab content</p>
+      <p>Tab inhoud</p>
     </div>
     </div>
   </div>
@@ -202,8 +202,8 @@ type   : 'Semantic'
     <div class="column">
       <h2 class="ui center aligned icon header">
         <i class="circular emphasized users icon"></i>
-        <div class="content">Growing Every Day
-          <div class="sub header">New UI components are written every day. Check back soon to see more.</div>
+        <div class="content">Groeit Elke Dag
+          <div class="sub header">Nieuwe UI componenten worden elke dag geschreven. Kom regelmatig terug om meer te zien.</div>
         </div>
       </h2>
       <div class="ui horizontal divider">
@@ -215,7 +215,7 @@ type   : 'Semantic'
             <div class="ui stacked segment">
               <div class="ui statistic">
                 <div class="number"><%= uiElements.length %></div>
-                <div class="description">UI Elements</div>
+                <div class="description">UI Elementen</div>
               </div>
               <div class="ui divided selection list">
                 <% for element in uiElements: %>
@@ -228,7 +228,7 @@ type   : 'Semantic'
             <div class="ui stacked segment">
               <div class="ui statistic">
                 <div class="number"><%= uiCollections.length %></div>
-                <div class="description">UI Collections</div>
+                <div class="description">UI Collecties</div>
               </div>
               <div class="ui divided selection list">
                 <% for element in uiCollections: %>
@@ -274,9 +274,9 @@ type   : 'Semantic'
   <div class="item">jack lukic 2013</div>
   <a href="https://github.com/semantic-org/Semantic-UI" class="item">Github</a>
   <div class="item">
-    Made possible by <a href="http://www.quirky.com" target="_blank">Quirky.com</a>
+    Mogelijk gemaakt door <a href="http://www.quirky.com" target="_blank">Quirky.com</a>
   </div>
   <div class="item">
-    Tested with <a href="http://www.browserstack.com" target="_blank">Browser Stack</a>
+    Getest met <a href="http://www.browserstack.com" target="_blank">Browser Stack</a>
   </div>
 </div>

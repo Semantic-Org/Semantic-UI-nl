@@ -1,9 +1,9 @@
   ---
 layout      : 'default'
 css         : 'guide'
-title       : "What's Different"
-description : 'Separating Semantic from the pack'
-type        : 'UI Introduction'
+title       : "Wat is Anders"
+description : 'Semantic onderscheiden van de rest'
+type        : 'UI Introductie'
 ---
 <script src="/javascript/intro.js"></script>
 
@@ -12,60 +12,60 @@ type        : 'UI Introduction'
 <div class="main container">
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
-      <a class="active item">Philosophy</a>
+      <a class="active item">Filosofie</a>
     </div>
   </div>
 
     <h2 class="ui header">
-      Build Responsive Layouts Easier
-      <div class="sub header">Designed Completely with EM</div>
+      Bouw Responsive Layouts Gemakkelijker
+      <div class="sub header">Compleet Ontworpen met EM</div>
     </h2>
-    <p>Every component is defined using <code>em</code> and <code>rem</code> so that components can be resized simply on the fly. Want a menu to get smaller on mobile? Simply have it's font-size change using a media query.</p>
+    <p>Elk component is gedefinieerd met behulp van <code>em</code> en <code>rem</code> zodat componenten simpelweg gaandeweg in grootte aangepast kunnen worden. Wil je dat een menu kleiner wordt op een mobiel? Laat simpelweg z'n font grootte veranderen met behulp van een media query.</p>
 
     <h2 class="ui header">
-      Self Explanatory
-      <div class="sub header">Descriptive not Prescriptive</div>
+      Spreekt Voor Zich
+      <div class="sub header">Beschrijvend, niet Voorschrijvend</div>
     </h2>
-    <p> Writing front end code shouldn't require learning the naming or programming conventions of a particular developer.</p>
-    <p>Instead of using short-hand, or codifying naming conventions, Semantic uses simple, common language for parts of interface elements, and familiar patterns found in natural languages for describing elements.</p>
+    <p> Front end code schrijven zou niet het leren van de naamgevings- of programmeerconventies van een bepaalde ontwikkelaar moeten inhouden.</p>
+    <p>In plaats van afkortingen, of codificatie van naamgevingsconventies, gebruikt Semantic simpele, algemene taal voor delen van interface elementen, en vertrouwde patronen welke in natuurlijke talen gevonden worden voor het beschrijven van elementen.</p>
 
     <h2 class="ui header">
       Tag ambivalent
-      <div class="sub header">Use whatever html tags you please.</div>
+      <div class="sub header">Gebruik elke willekeurige html tags die je wilt.</div>
     </h2>
-    <p>Interface definitions in Semantic are tag ambivalent. That means you can use div, article, section, span without affecting the display of the element. Special tags like a, table, td still carry special meaning in certain circumstances however.</p>
+    <p>Interface definities in Semantic zijn tag ambivalent. Dat betekend dat je div, article, section, span kan gebruiken zonder dat het de weergave van het element beinvloed. Speciale tags zoals a, table, td behouden echter hun speciale betekenissen in bepaalde omstandigheden.</p>
 
     <h2 class="ui header">
-      Powerful tools for expressing groups and collections.
-      <div class="sub header">Don't repeat yourself</div>
+      Krachtige gereedschappen voor het uitdrukken van groepen en collecties.
+      <div class="sub header">Herhaal jezelf niet</div>
     </h2>
-    <p>In English it's much easier to say "There are three tall men" than "There is a tall man, a tall man and a tall man".</p>
-    <p>In Semantic element definitions can be expressed in groups have shared attributes like size, color, type avoiding repetitive declarations.</p>
+    <p>In het Engels is het veel makkelijker om te zeggen "There are three tall men" (Er zijn drie lange mannen) dan "There is a tall man, a tall man and a tall man" (Er is een lange man, een lange man en een lange man).</p>
+    <p>In Semantic kunnen element definities uitgedrukt worden in groepen welke gedeelde attributen zoals grootte, kleur en type kunnen hebben, daarmee repetitieve declaraties vermijdend.</p>
 
     <h2 class="ui header">
-      Portable and self-contained.
-      <div class="sub header">Using Semantic doesn't mean adopting an entire framework, or rewriting your code base</div>
+      Portable en self-contained.
+      <div class="sub header">Semantic gebruiken betekent niet een heel framework adopteren, of je codebasis herschrijven</div>
     </h2>
-    <p>Semantic components are written in a singular style, but are not part of mandated overarching library. Only like a couple components? No problem, use only what you need.</p>
-    <p>UI components in Semantic also define optional and required couplings with other components where their usage intersect. That means for example, a popup can check for the existence of CSS animation component before using the fallback javascript animations.</p>
+    <p>Semantic componenten zijn geheel in een eenduidige stijl geschreven, maar zijn niet onderdeel van een gemandateerde overkoepelende bibliotheek. Vindt je alleen enkele componenten leuk? Geen probleem, gebruik alleen wat je nodig hebt.</p>
+    <p>UI componenten in Semantic definieren ook optionele en verplichtte koppelingen met andere componenten waar hun gebruik elkaar snijdt. Dat betekent bijvoorbeeld, een popup kan controleren of het CSS animatie component bestaat alvorens de fallback javascript animaties te gebruiken.</p>
 
     <h2 class="ui header">
-      Shared language, different implementations
-      <div class="sub header">Restyle your site without Restructuring it</div>
+      Gedeelde taal, verschillende implementaties
+      <div class="sub header">Herstijl je site zonder het te Herstructureren</div>
     </h2>
 
-    <p>Describing your site's content using a common language like Semantic allows other developers to create UI definitions to match one shared vocabulary. This means you can redesign your website without retooling your html. Simply alter the look and feel of your UI using a different UI style definition.</p>
+    <p>Je site z'n inhoud beschrijven met behulp van een gedeelde taal zoals Semantic, stelt andere ontwikkelaars in staat om UI definities maken die een gedeelde woordenschat gebruiken. Dit betekent dat je je website kan herontwerpen zonder he html aan te passen. Verander eenvoudig de look-and-feel van je UI door een andere UI style definitie te gebruiken.</p>
 
     <h2 class="ui header">
-      Only the important stuff
-      <div class="sub header">Not the kitchen sink</div>
+      Alleen het belangrijke spul
+      <div class="sub header">Niet het aanrecht</div>
     </h2>
-    <p>Instead of giving every possible variation or behavior under the sun, element definitions are designed to be a starting off point. No oversized downloads with optional features you will most likely never use, just the stuff to get you going.</p>
+    <p>In plaats van het geven van elke mogelijk variatie of gedrag dat zou kunnen bestaan, zijn element definities ontworpen om een startpunt te zijn. Geen overmatig grote downloads met optionele functies die je waarschijnlijk nooit gebruikt, alleen het spul om je te helpen starten.</p>
 
   <div class="ui horizontal divider"><i class="circular heart icon"></i></div>
 
   <a class="ui large right labeled teal icon button" href="/introduction/definitions.html">
-    Next: UI Definitions
+    Eerstvolgend: UI Definities
     <i class="right arrow icon"></i>
   </a>
 
