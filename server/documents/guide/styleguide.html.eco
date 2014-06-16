@@ -2,9 +2,9 @@
 layout      : 'default'
 css         : 'guide'
 
-title       : 'Language'
+title       : 'Taal'
 description : 'Suggestions for language usage when developing user interfaces'
-type        : 'UI Guide'
+type        : 'UI Gids'
 ---
 <%- @partial('header') %>
 <div class="main container">

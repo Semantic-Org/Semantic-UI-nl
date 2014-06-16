@@ -4,7 +4,7 @@ css         : 'guide'
 
 title       : 'Types'
 description : 'Een type is een wederzijds exclusieve versie van een element'
-type        : 'UI Introduction'
+type        : 'UI Introductie'
 ---
 <script src="/javascript/intro.js"></script>
 

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<% uiIntroduction    = @getCollection("documents").findAll({type: $in: ['UI Introduction']},[{title: 1}]).toJSON() %>
+<% uiIntroduction    = @getCollection("documents").findAll({type: $in: ['UI Introductie']},[{title: 1}]).toJSON() %>
 <% uiProject         = @getCollection("documents").findAll({type: $in: ['Semantic Project']},[{title: 1}]).toJSON() %>
-<% uiGuide           = @getCollection("documents").findAll({type: $in: ['UI Guide']},[{title: 1}]).toJSON() %>
+<% uiGuide           = @getCollection("documents").findAll({type: $in: ['UI Gids']},[{title: 1}]).toJSON() %>
 <% uiElements        = @getCollection("documents").findAll({type: $in: ['UI Element']},[{title: 1}]).toJSON() %>
-<% uiCollections     = @getCollection("documents").findAll({type: $in: ['UI Collection']},[{title: 1}]).toJSON() %>
+<% uiCollections     = @getCollection("documents").findAll({type: $in: ['UI Collectie']},[{title: 1}]).toJSON() %>
 <% uiViews           = @getCollection("documents").findAll({type: $in: ['UI View']},[{title: 1}]).toJSON() %>
 <% uiModules         = @getCollection("documents").findAll({type: $in: ['UI Module']},[{title: 1}]).toJSON() %>
 <% uiBehavior        = @getCollection("documents").findAll({type: $in: ['UI Behavior']},[{title: 1}]).toJSON() %>
-<% uiSpecification   = @getCollection("documents").findAll({type: $in: ['UI Specification']},[{title: 1}]).toJSON() %>
+<% uiSpecification   = @getCollection("documents").findAll({type: $in: ['UI Specificatie']},[{title: 1}]).toJSON() %>
 <% currentCollection = @getCollection("documents").findAll({type: $in: [@document.type]},[{title: 1}]).toJSON() %>
 <% pageCount         = @pageCount(currentCollection) %>
 <% pageNumber        = @getPage(currentCollection, @document.id) %>
@@ -149,7 +149,7 @@
     </a>
     <div class="item">
       <a href="/">
-        <b>Introduction</b>
+        <b>Introductie</b>
       </a>
       <div class="menu">
         <% for element in uiIntroduction: %>
@@ -166,7 +166,7 @@
       </div>
     </div>
     <div class="item">
-      <a href="/element.html"><b>Elements</b></a>
+      <a href="/element.html"><b>Elementen</b></a>
       <div class="menu">
         <% for element in uiElements: %>
           <a class="<%= if element.id is @document.id then 'active ' %>item" href="<%= element.url %>"><%= element.title %></a>
@@ -174,7 +174,7 @@
       </div>
     </div>
     <div class="item">
-      <a href="/collection.html"><b>Collections</b></a>
+      <a href="/collection.html"><b>Collecties</b></a>
       <div class="menu">
         <% for element in uiCollections: %>
           <a class="<%= if element.id is @document.id then 'active ' %>item" href="<%= element.url %>"><%= element.title %></a>
@@ -198,7 +198,7 @@
       </div>
     </div>
     <div class="item">
-      <b>Behavior</b>
+      <b>Gedrag</b>
       <div class="menu">
         <% for element in uiBehavior: %>
           <a class="<%= if element.id is @document.id then 'active ' %>item" href="<%= element.url %>"><%= element.title %></a>
@@ -206,7 +206,7 @@
       </div>
     </div>
     <div class="item">
-      <b>Style Guide</b>
+      <b>Stijl Gids</b>
       <div class="menu">
         <% for element in uiGuide: %>
           <a class="<%= if element.id is @document.id then 'active ' %>item" href="<%= element.url %>"><%= element.title %></a>
@@ -225,7 +225,7 @@
 
   <div class="ui fixed transparent inverted main menu">
     <div class="container">
-      <a class="launch item"><i class="icon list layout"></i> Content</a>
+      <a class="launch item"><i class="icon list layout"></i> Inhoud</a>
       <div class="title item">
         <b><%= @document.type %>:</b> <%= @document.title %>
       </div>
@@ -235,7 +235,7 @@
       <div class="disabled icon item"><i class="left arrow icon"></i></div>
       <% end %>
       <div class="section ui dropdown link item">
-        <span class="count"><%= "#{pageNumber} of #{pageCount}" %></span>
+        <span class="count"><%= "#{pageNumber} van #{pageCount}" %></span>
         <div class="menu">
           <% for element, index in currentCollection: %>
             <div class="<%= if element.id is @document.id then 'active ' %>item">
@@ -258,14 +258,14 @@
 <!--         <a class="popup overview icon item" data-content="Toggle Definition">
           <i class="book icon"></i>
         </a> -->
-        <a class="popup designer icon item" data-content="Designer Mode">
+        <a class="popup designer icon item" data-content="Ontwerper Modus">
           <i class="basic paint icon"></i>
         </a>
-        <a class="popup developer icon item" data-content="Developer Mode">
+        <a class="popup developer icon item" data-content="Ontwikkelaar Modus">
           <i class="terminal icon"></i>
         </a>
         <% end %>
-        <a class="popup icon github item" data-content="View project on Github" href="https://github.com/quirkyinc/semantic">
+        <a class="popup icon github item" data-content="Bekijk project op Github" href="https://github.com/quirkyinc/semantic">
           <i class="icon github"></i>
         </a>
         <!--

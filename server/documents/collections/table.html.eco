@@ -4,7 +4,7 @@ css         : 'table'
 
 title       : 'Table'
 description : 'Tables display collections of data grouped into rows'
-type        : 'UI Collection'
+type        : 'UI Collectie'
 ---
 <script src="/javascript/table.js"></script>
 

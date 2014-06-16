@@ -3,7 +3,7 @@ layout      : 'default'
 css         : 'breadcrumb'
 title       : 'Breadcrumb'
 description : 'A breadcrumb is a menu to show the location of the current section in relation to other sections.'
-type        : 'UI Collection'
+type        : 'UI Collectie'
 ---
 
 <%- @partial('header') %>

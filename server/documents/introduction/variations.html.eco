@@ -4,7 +4,7 @@ css         : 'guide'
 
 title       : 'Variaties'
 description : 'Variaties zijn stapelbare, symbiotische wijzigingen aan het uiterlijk van een element'
-type        : 'UI Introduction'
+type        : 'UI Introductie'
 ---
 <script src="/javascript/intro.js"></script>
 

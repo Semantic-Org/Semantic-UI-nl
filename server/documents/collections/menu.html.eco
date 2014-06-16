@@ -4,7 +4,7 @@ css         : 'menu'
 
 title       : 'Menu'
 description : 'A menu is a collection of elements showing related user actions'
-type        : 'UI Collection'
+type        : 'UI Collectie'
 ---
 <script src="/javascript/menu.js"></script>
 

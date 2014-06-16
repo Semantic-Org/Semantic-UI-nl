@@ -4,7 +4,7 @@ css         : 'Grid'
 
 title       : 'Grid'
 description : 'A grid is a structure used to harmonize negative space in a layout'
-type        : 'UI Collection'
+type        : 'UI Collectie'
 ---
 
 <%- @partial('header') %>

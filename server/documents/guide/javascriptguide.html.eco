@@ -4,7 +4,7 @@ css         : 'javascript'
 
 title       : 'Javascript'
 description : 'Suggestions for Javascript development practices'
-type        : 'UI Guide'
+type        : 'UI Gids'
 ---
 
 <%- @partial('header') %>
