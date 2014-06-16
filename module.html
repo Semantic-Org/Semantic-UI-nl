@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="image_src" type="image/jpeg" href="images/share.png" />
+
+  <!-- Site Properities -->
+  <meta name="generator" content="DocPad v6.68.1" />
+  <title>UI Modules | Semantic UI</title>
+
+  <meta name="description" content="Modules zijn interface elementen wiens gedrag een essentieel onderdeel zijn van hun definitie" />
+  <meta name="keywords" content="html5, ui, library, framework, javascript" />
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" type="text/css" class="ui" href="/build/packaged/css/semantic.min.css">
+  
+
+  <link rel="stylesheet" type="text/css" href="/stylesheets/semantic.css">
+
+  
+  <script>
+  (function () {
+    var
+      eventSupport = ('querySelector' in document && 'addEventListener' in window)
+      jsonSupport  = (typeof JSON !== 'undefined'),
+      jQuery       = (eventSupport && jsonSupport)
+        ? '/javascript/library/jquery.min.js'
+        : '/javascript/library/jquery.legacy.min.js'
+    ;
+    document.write('<script src="' + jQuery + '"><\/script>');
+  }());
+  </script>
+  
+  <script src="/javascript/library/history.js"></script>
+  <script src="/javascript/library/easing.js"></script>
+  <script src="/javascript/library/ace/ace.js"></script>
+  <script src="/javascript/library/tablesort.js"></script>
+  <script src="/javascript/library/waypoints.js"></script>
+
+  
+  <script src="/build/packaged/javascript/semantic.min.js"></script>
+  
+
+  <script src="/javascript/semantic.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44039803-1', 'semantic-ui.com');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+<body id="example" class="module" ontouchstart="">
+  <div class="ui large vertical inverted labeled icon sidebar menu" id="menu">
+    <a class="hide item">
+      <i class="close icon"></i> Close Menu
+    </a>
+    <a class="item" href="/build/semantic.zip">
+      <i class="inverted circular red awesome download cloud icon"></i> <b>Download</b>
+    </a>
+    <div class="item">
+      <a href="/">
+        <b>Introductie</b>
+      </a>
+      <div class="menu">
+        
+          <a class="item" href="/introduction/definitions.html">Definities</a>
+        
+          <a class="item" href="/introduction/overview.html">Overzicht</a>
+        
+          <a class="item" href="/introduction/types.html">Types</a>
+        
+          <a class="item" href="/introduction/variations.html">Variaties</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <b>Project</b>
+      <div class="menu">
+        
+          <a class="item" href="/project/contributing.html">Bijdragen</a>
+        
+          <a class="item" href="/project/development.html">Lokale Documentatie</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <a href="/element.html"><b>Elementen</b></a>
+      <div class="menu">
+        
+          <a class="item" href="/elements/button.html">Button</a>
+        
+          <a class="item" href="/elements/divider.html">Divider</a>
+        
+          <a class="item" href="/elements/header.html">Header</a>
+        
+          <a class="item" href="/elements/icon.html">Icon</a>
+        
+          <a class="item" href="/elements/image.html">Image</a>
+        
+          <a class="item" href="/elements/input.html">Input</a>
+        
+          <a class="item" href="/elements/label.html">Label</a>
+        
+          <a class="item" href="/elements/loader.html">Loader</a>
+        
+          <a class="item" href="/elements/progress.html">Progress</a>
+        
+          <a class="item" href="/modules/reveal.html">Reveal</a>
+        
+          <a class="item" href="/elements/segment.html">Segment</a>
+        
+          <a class="item" href="/elements/step.html">Step</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <a href="/collection.html"><b>Collecties</b></a>
+      <div class="menu">
+        
+          <a class="item" href="/collections/breadcrumb.html">Breadcrumb</a>
+        
+          <a class="item" href="/collections/form.html">Form</a>
+        
+          <a class="item" href="/collections/grid.html">Grid</a>
+        
+          <a class="item" href="/collections/menu.html">Menu</a>
+        
+          <a class="item" href="/collections/message.html">Message</a>
+        
+          <a class="item" href="/collections/table.html">Table</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <b>Views</b>
+      <div class="menu">
+        
+          <a class="item" href="/views/comment.html">Comment</a>
+        
+          <a class="item" href="/views/feed.html">Feed</a>
+        
+          <a class="item" href="/views/item.html">Item</a>
+        
+          <a class="item" href="/views/list.html">List</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <a href="/module.html"><b>Modules</b></a>
+      <div class="menu">
+        
+          <a class="item" href="/modules/accordion.html">Accordion</a>
+        
+          <a class="item" href="/modules/checkbox.html">Checkbox</a>
+        
+          <a class="item" href="/modules/dimmer.html">Dimmer</a>
+        
+          <a class="item" href="/modules/dropdown.html">Dropdown</a>
+        
+          <a class="item" href="/modules/modal.html">Modal</a>
+        
+          <a class="item" href="/modules/popup.html">Popup</a>
+        
+          <a class="item" href="/modules/rating.html">Rating</a>
+        
+          <a class="item" href="/modules/shape.html">Shape</a>
+        
+          <a class="item" href="/modules/sidebar.html">Sidebar</a>
+        
+          <a class="item" href="/modules/transition.html">Transition</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <b>Gedrag</b>
+      <div class="menu">
+        
+          <a class="item" href="/modules/form.html">Form Validation</a>
+        
+      </div>
+    </div>
+    <div class="item">
+      <b>Stijl Gids</b>
+      <div class="menu">
+        
+          <a class="item" href="/guide/cssguide.html">CSS</a>
+        
+          <a class="item" href="/guide/javascriptguide.html">Javascript</a>
+        
+          <a class="item" href="/guide/styleguide.html">Taal</a>
+        
+      </div>
+    </div>
+<!--     <div class="item">
+      <b>Specification</b>
+      <div class="menu">
+        
+      </div>
+    </div> -->
+  </div>
+
+  <div class="ui fixed transparent inverted main menu">
+    <div class="container">
+      <a class="launch item"><i class="icon list layout"></i> Inhoud</a>
+      <div class="title item">
+        <b>Semantic:</b> UI Modules
+      </div>
+      
+      <a class="icon item" href="/element.html"><i class="left arrow icon"></i></a>
+      
+      <div class="section ui dropdown link item">
+        <span class="count">4 van 4</span>
+        <div class="menu">
+          
+            <div class="item">
+              <a href="/index.html">1. Introductie</a>
+            </div>
+          
+            <div class="item">
+              <a href="/collection.html">2. UI Collecties</a>
+            </div>
+          
+            <div class="item">
+              <a href="/element.html">3. UI Elementen</a>
+            </div>
+          
+            <div class="active item">
+              <a href="/module.html">4. UI Modules</a>
+            </div>
+          
+        </div>
+      </div>
+      
+      <div class="disabled icon item"><i class="right arrow icon"></i></div>
+      
+      <div class="right menu">
+        <div class="vertically fitted borderless item">
+          <iframe src="http://ghbtns.com/github-btn.html?user=semantic-org&repo=semantic-ui&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+        </div>
+        
+        <a class="popup icon github item" data-content="Bekijk project op Github" href="https://github.com/quirkyinc/semantic">
+          <i class="icon github"></i>
+        </a>
+        <!--
+        <div class="ui simple dropdown item">
+          <i class="icon tint"></i> Theme
+          <div class="theme menu">
+            <div class="active item" data-theme="flat">Flat</div>
+            <div class="item" data-theme="shaded">Shaded</div>
+            <div class="item" data-theme="classic">Classic</div>
+          </div>
+        </div>
+        !-->
+      </div>
+    </div>
+  </div>
+    <div class="ui black huge launch right attached button">
+      <i class="icon list layout"></i>
+      <span class="text">Menu</span>
+    </div>
+  
+
+<div class="tab segment">
+  <div class="container">
+    <div class="introduction">
+
+      <h1 class="ui dividing header">
+        UI Modules
+        
+      </h1>
+
+      <p>Modules zijn interface elementen wiens gedrag een essentieel onderdeel zijn van hun definitie</p>
+      
+      
+    </div>
+    <div class="advertisement">
+      
+      <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/51619/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+      
+    </div>
+    
+    
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <div class="four item tabular ui menu">
+        
+          <a class="active item" data-tab="overview">Overzicht</a>
+          
+        
+          <a class="item" data-tab="init">Initialisatie</a>
+          
+        
+          <a class="item" data-tab="behavior">Gedrag</a>
+          
+        
+          <a class="item" data-tab="settings">Instellingen</a>
+          
+        
+      </div>
+      
+      <div class="fluid vertical ui menu">
+        
+          <a class="active item" data-tab="overview">Overzicht</a>
+          
+        
+          <a class="item" data-tab="init">Initialisatie</a>
+          
+        
+          <a class="item" data-tab="behavior">Gedrag</a>
+          
+        
+          <a class="item" data-tab="settings">Instellingen</a>
+          
+        
+      </div>
+    
+  </div>
+</div>
+
+
+<div class="main container">
+
+  <div class="ui tab" data-tab="overview">
+
+    <p>Alle officiele javascript modules in Semantic zijn ontworpen gebruik makend van een enkelvoudig ontwerp patroon. Dit patroon stelt een aantal nuttige functies ter beschikking aan alle javascript componenten</p>
+    <div class="ui relaxed list">
+      <div class="item">
+        <i class="check icon"></i>
+        <div class="content">
+          <div class="header">Run-time Prestatie Analyse</div>
+          <p>Semantic modules hebben allemaal het vermogen om prestatie traces te loggen naar de console, wat je in staat stelt om te zien welke aspecten van de modele mindere of meer mate presteren en om de totale initialisatie tijd te volgen <code>onDomReady</code></p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="check icon"></i>
+        <div class="content">
+          <div class="header">Menselijk Leesbare Traces</div>
+          <p>Anders dan andere component bibliotheken die de uitleg van gedrag verstoppen in inline comments welke alleen gelezen kunnen worden door de bron code te doorzoeken, leveren Semantic modules run-time debug uitvoer aan de JavaScript console wat je vertelt wat elk component doet op het moment dat het dat doet.</p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="check icon"></i>
+        <div class="content">
+          <div class="header">Instellingen kunnen na initialisatie overschreven worden</div>
+          <p>Semantic levert methodes om standaard instellingen te zetten, instellingen te zetten tijdens initialisatie, en om instellingen te zetten na initialisatie, wat complete flexibiliteit toe staat met betrekking tot component gedrag.</p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="check icon"></i>
+        <div class="content">
+          <div class="header">Alle modules bevatten een include, initialize en destroy methode</div>
+          <p>Alle events en metadata zijn genamespaced en kunnen worden verwijderd na initialisatie, modules handelen destroy/init events automatisch af om gebruikers in staat te stellen een plugin meedere keren te lazy-initializen zonder problemen.</p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="check icon"></i>
+        <div class="content">
+          <div class="header">Instantie beschikbaar in metadata</div>
+          <p>Modules slaan hun instantie op in metadata wat inhoud dat, als je een probleem hebt, je de instantie van een UI element direct kan aanpassen door zijn eigenschappen aan te passen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <a href="/spec/docs/modal.commented.html" class="ui large secondary labeled icon button">
+      <i class="info icon"></i>
+      Real World Voorbeeld Met Commentaar
+    </a>
+    <a href="/spec/docs/module.commented.html" class="ui large black labeled icon button">
+      <i class="info icon"></i>
+      Design Pattern Met Commentaar
+    </a>
+  </div>
+  <div class="ui tab" data-tab="init">
+    <h3 class="ui header">Overzicht</h3>
+    <p>Semantic verbind niet automatisch events tijdens het laden van de pagina. Je moet beslissen welke modules op elke pagina initialiseren door een module te initialiseren in javascript.</p>
+    <div class="ui info message">Het is oke om een element meerdere keren te initialiseren, het element zal automatisch de vorige instantie vernietigen en herinitialiseren met de aangeleverde instellingen.</div>
+    <h3 class="ui header">Voorbeeld van Initialisatie</h3>
+    <p>Het volgende voorbeeld toont hoe je gedrag koppelt aan elementen op een pagina met behulp van Semantic</p>
+    <div class="code" data-type="html" data-preview="true">
+      <div class="ui medium image">
+        <div class="ui corner label">
+          <i class="help link icon" data-content="Dit verschijnt rechts"></i>
+        </div>
+        <img src="/images/demo/photo.jpg" data-content="Dit verschijnt in de standaard locatie">
+      </div>
+    </div>
+    <div class="evaluated code" data-type="javascript">
+    // simpele initialisatie
+    $('.ui.image img')
+      .popup()
+    ;
+    </div>
+    <div class="evaluated code" data-type="javascript">
+    // initialisatie met instellingen
+    $('.ui.image .help')
+      .popup({
+        position: 'right center'
+      })
+    ;
+    </div>
+  </div>
+  <div class="ui tab" data-tab="behavior">
+    <div class="fixed column">
+      <div class="content">
+        <h3 class="ui header">Demo Element</h3>
+        <i class="demo circular help link icon" data-content="Popup #1"></i>
+        <i class="demo circular help link icon" data-content="Popup #2"></i>
+        <div class="ui raised segment">
+          <div class="ui top attached label">Console</div>
+          <pre class="console"></pre>
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <h2 class="ui dividing header">Module Behaviors Gebruiken</h2>
+      <p>Behaviors vormen een element z'n API. Ze roepen functionaliteit aan of retourneren aspecten van de huidige staat van een element</p>
+      <p>Behaviors kunnen aangeroepen worden met behulp van woorden met spaties, camelcase of dot notatie. De voorkeursmethode is echter <b>woorden met spaties</b>. Method lookup wordt automatisch intern gedaan.</p>
+
+      <p>Behaviors kunnen aangeroepen worden met de syntax:</p>
+      <div class="code">
+      // beiden zijn hetzelfde
+      $('.your.element')
+        .module('behavior name', argumentOne, argumentTwo)
+        .module('behaviorName', argumentOne, argumentTwo)
+      ;
+      </div>
+
+      <h3 class="ui header">Gemeenschappelijke Behaviors</h3>
+      <p>Alle modules hebben een set aan kern behaviors welke je toestaan om het component te configureren</p>
+      <table class="ui celled definition sortable table segment">
+        <thead>
+          <th>Naam</th>
+          <th>Gebruik</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>initialize</td>
+            <td>Initialiseert een element en voegt pagina event handlers toe alsmede initialisatie data.</td>
+          </tr>
+          <tr>
+            <td>destroy</td>
+            <td>Verwijdert alle wijzigingen aan een pagina die zijn gemaakt door initialisatie.</td>
+          </tr>
+          <tr>
+            <td>refresh</td>
+            <td>Ververst cached waardes voor een component.</td>
+          </tr>
+          <tr>
+            <td>setting(setting, value)</td>
+            <td>Staat je toe een component instelling aan te passen of uit te lezen.</td>
+          </tr>
+          <tr>
+            <td>invoke(query, passedArguments, instance)</td>
+            <td>Interne methode gebruikt voor het vertalen van een zinsweergave methode in een interne methode.</td>
+          </tr>
+          <tr>
+            <td>debug(comment, values)</td>
+            <td>Toont een log indien de gebruiker logging heeft aangezet.</td>
+          </tr>
+          <tr>
+            <td>verbose(comment, values)</td>
+            <td>Toont een log indien de gebruiker verbose logging heeft aangezet.</td>
+          </tr>
+          <tr>
+            <td>error(name)</td>
+            <td>Toont een naam error bericht vanuit de instellingen van het component.</td>
+          </tr>
+          <tr>
+            <td>performance log(comment, value)</td>
+            <td>Voegt prestatietraceringgegevens toe voor een element.</td>
+          </tr>
+          <tr>
+            <td>performance display</td>
+            <td>Toont prestatie gegevens voor het huidige element.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="ui dividing header">Voorbeelden</h2>
+
+      <h3 class="ui header">Interne Methodes Overriden</h3>
+      <p>Interne methodes kunnen overschreven worden tijdens run-time voor individuele instanties van een module.</p>
+
+      <div class="evaluated code">
+        // initialize both popups inline
+        $('.demo.icon')
+          .popup({
+            inline: true
+          })
+        ;
+        //output the first popup's logs to the page
+        $('.demo.icon').first()
+          .popup('internal', 'debug', function() {
+            $('.console')
+              .append(arguments[0] + "\n")
+              // scroll to bottom
+              .prop('scrollTop', $('.console').prop('scrollHeight') )
+            ;
+          })
+        ;
+      </div>
+
+      <h3 class="ui header">Gedrag Activeren</h3>
+      <p>Sommige behaviors kunnen argumenten accepteren, bijvoorbeeld, een popup <b>show</b> behavior kan een callback functie accepteren als argument. Dit arbitraire voorbeeld toont het openen van een popup waarna z'n positie programmatisch gewijzigd wordt.</p>
+      <div class="code" data-demo="true">
+        // Sets a popup to top left position with an offset of negative five
+        $('.demo.icon').first()
+          .popup('setting', 'position', 'top right')
+          .popup('show', function() {
+            $(this)
+              .popup('set position', 'right center')
+            ;
+          })
+        ;
+      </div>
+      <h3 class="ui header">Waardes retourneren</h3>
+      <p>Behaviors leveren mogelijk ook een API voor het benaderen van een modele z'n interne status. Bijvoorbeeld, popups hebben een methode <code>is visible</code> welke true of false retourneert afhankelijk van of een popup op het moment zichtbaar is.</p>
+      <div class="code" data-demo="true">
+        // returns boolean value instead of jQuery chain
+        $('.demo.icon')
+          .popup('debug', $('.demo.icon').first().popup('is visible') )
+        ;
+      </div>
+      <div class="code" data-demo="true">
+        // if selector size > 1 returns array of values [boolean, boolean...]
+        $('.demo.icon')
+          .popup('debug', $('.demo.icon').popup('is visible') )
+        ;
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui tab" data-tab="settings">
+
+    <p>Anders dan voor javascript componenten, is elk willekeurig iets in Semantic een instelling. Dit betekent dat het niet nodig is om door de interne structuur van het component te spitten om een verwachtte css selector of class name te veranderen. Verander simpelweg het instellingen object.</p>
+
+    <h3 class="ui header">Algemene Instellingen</h3>
+    <p>Het volgende is een lijst met algemene instellingen die men gewoonlijk in javascript modules kan vinden.
+    <table class="ui celled sortable definition table segment">
+      <thead>
+        <th>Naam</th>
+        <th>Gebruik</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>name</td>
+          <td>Naam gebruikt in debug logs om dit widget te onderscheiden van andere debug statements.</td>
+        </tr>
+        <tr>
+          <td>debug</td>
+          <td>Of er standaard debug uitvoer aan de console geleverd moet worden.</td>
+        </tr>
+        <tr>
+          <td>performance</td>
+          <td>Of er prestatie informatie geleverd moet worden aan de console of interne methode aanroepen.</td>
+        </tr>
+        <tr>
+          <td>verbose</td>
+          <td>Of er extra debug uitvoer aan de console geleverd moet worden.</td>
+        </tr>
+        <tr>
+          <td>namespace</td>
+          <td>Namespace welke wordt gebruikt voor DOM event en metadata namespacing. Staat een module z'n destroy methode toe om niet andere modules aan te raken.</td>
+        </tr>
+        <tr>
+          <td>metadata</td>
+          <td>Een object dat alle gebruikte metadata attributen bevat.</td>
+        </tr>
+        <tr>
+          <td>selectors</td>
+          <td>Een object dat alle in de module gebruikte selectors bevat, deze zijn gewoonlijk children van de module.</td>
+        </tr>
+        <tr>
+          <td>classNames</td>
+          <td>Een object dat alle in de module gebruikte class names bevat.</td>
+        </tr>
+        <tr>
+          <td>errors</td>
+          <td colspan="2">Een javascript array met error statements die in de plugin gebruikt worden. Deze worden soms getoond aan de gebruiker, maar komen meestal voor in debug statements.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="ui header">Instellingen Wijzigen</h3>
+    <p>De volgende voorbeelden gebruiken <a href="/modules/popup.html">popup</a> als een voorbeeld van hoe men instellingen wijzigt.</p>
+    <div class="ui ordered very relaxed list">
+      <div class="item">
+        <div class="header">Module defaults instellen</div>
+        Default instellingen van een module kunnen overschreven worden door <b>$.fn.module.settings</b> aan te passen.
+        <br>
+        <div class="code">
+        $.fn.popup.settings.moduleName = 'Godzilla';
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Tijdens initialisatie</div>
+        Een instellingen object kan worden doorgegeven wanneer de plugin initialiseert.
+        <br>
+      <div class="code">
+      $('.foo')
+        .popup({
+          moduleName : 'Godzilla',
+          verbose    : true
+        })
+      ;
+      </div>
+      </div>
+      <div class="item">
+        <div class="header">Na initialisatie</div>
+        Instellingen kunnen worden aangepast nadat een module is geinitialiseerd door de 'settings' methode aan te roepen op de module met of een instellingen object of een naam, waarde paar.
+        <br>
+      <div class="code">
+      $('.foo')
+        // lets initialize that!
+        .popup()
+        // oh wait forgot something
+        .popup('setting', 'moduleName', 'Godzilla')
+        // and some more things
+        .popup('setting', {
+          debug   : true,
+          verbose : true
+        })
+      ;
+      </div>
+      </div>
+    </div>
+    <h3 class="ui header">Instellingen Uitlezen</h3>
+    <p>Instellingen kunnen ook programmatisch uitgelezen worden:
+    <div class="code">
+      // outputs 'godzilla' (1) or ['godzilla', 'godzilla'...] (2 or more)
+      $('.foo').popup('setting', 'moduleName');
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
