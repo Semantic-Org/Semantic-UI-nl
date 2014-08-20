@@ -7,13 +7,15 @@ Semantic UI is under constant development, so **be sure to check out our [releas
 
 ### Project Status
 
-**Semantic is being reworked for a ``1.0`` release for Spring.**
+**Semantic is being reworked for a ``1.0`` release**
 
 Semantic may still be officially 'pre-release', but is already used in production in large sites like [Quirky](http://www.quirky.com) and [The New Republic](http://www.newrepublic.com)
 
 Although the pre-release branch ``0.x.x`` is actively being maintained, most important features like better theming support, and new components will land in ``1.0``.
 
-Beta documentation will be available soon for testers and early adopters.
+Beta documentation are available at [http://beta.semantic-ui.com](http://beta.semantic-ui.com) for testers and early adopters. Beta channel is currently available in [branch css](https://github.com/Semantic-Org/Semantic-UI/tree/css)
+
+Check out [this GitHub Issue thread](https://github.com/Semantic-Org/Semantic-UI/issues/691) for progress updates on 1.0 development.
 
 ## Translations
 
@@ -43,11 +45,12 @@ To download the entire library
 If you prefer to download the whole kit as a zip, it is so conveniently packaged.
 
     http://semantic-ui.com/build/semantic.zip
+    
+### CDN Resources
 
 Semantic is also available from CDN
-
-* [Hosted on CloudFlare CDN](http://cdnjs.com/libraries/semantic-ui/)
-* [Hosted on BootCDN](http://open.bootcss.com/semantic-ui/) (Chinese)
+* [Hosted on JSDelivr](http://www.jsdelivr.com/#!semantic-ui)
+* [BootCDN](http://open.bootcss.com/semantic-ui/) (Chinese)
 
 ## Learn More
 
@@ -65,7 +68,7 @@ If you want to keep track of development, please [join our google group](https:/
 
 Please [share any issues](https://github.com/Semantic-Org/Semantic-UI/issues?state=open) you may have. We need your help to get all the kinks out.
 
-If you are reporting a bug *you must create a test-case*. You can [fork this jsfiddle](http://jsfiddle.net/Vbr9d/42/) to get you started.
+If you are reporting a bug *you must create a test-case*. You can [fork this jsfiddle](http://jsfiddle.net/Vbr9d/42/) to get you started or [this fiddle for 1.0 branch](http://jsfiddle.net/J9MkJ/3/).
 
 If you need help, come hang out in `#semantic-ui` on *irc.freenode.net*.  Click here to use [webchat](http://webchat.freenode.net/?randomnick=1&channels=%23semantic-ui&prompt=1&uio=OT10cnVlJjExPTEyMwb9).
 
